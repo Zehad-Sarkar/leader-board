@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+/* header-section */
+.header-container {
+    width: 1440px;
+    height: 94px;
+    background-color: #562EFF;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 40px;
+    height: 51px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    /* display: flex; */
+}
+
+.nav-link {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-right: 36px;
+}
+
+/* section for top player, players, player name */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 870px;
+    height: 679px;
+    background-color: #FFFFFF;
+    padding: 33px 0 0 33px;
+
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+    margin-bottom: 40px;
+
+
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.Player-name-title {
+    width: 180px;
+    height: 21px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+}
+.top-blog-container{
+    margin-top: 29px;
+}
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 27px;
+}
+.blog-banner{
+    display: flex;
+    margin-bottom: 26px;
+}
+.blog-banner img {
+    width: 177px;
+    height: 117px;
+}
+.blog-heading{
+    margin-left: 19px;
+}
+.latest-course-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.icons{
+    display: flex;
+}
+.icon-1, .time{
+    font-size: 14px;
+}
+.fa-star, .fa-star-half, .fa-clock{
+    font-size: 12px;
+}
+.icon-2{
+    display: flex;
+    align-items: center;
+}
+/* for mobile device (screen size max 576 px ) */
+@media only screen and (max-width:576px) {
+    .header-container{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .blog-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-banner{
+        flex-direction: column;
+    }
+    .latest-course-container{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+}
+/* for medium device (577 to 992 px screen) */
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .header-container{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
+    .blog-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-banner{
+        flex-direction: column;
+    }
+    .latest-course-container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+}
+/* for desktop */
+@media only screen and (min-width:993px) {
+    .header-container{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+
+    }
+    .players{
+        grid-template-columns: repeat(3, 1fr);
+        flex-direction: column;
+    }
+    .blog-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .latest-course-container{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+}
